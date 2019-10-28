@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'normalize';
+@import 'grid';
+@import 'margins';
+@import 'paddings';
+@import 'text';
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:700,900&display=swap');
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden !important;
+    font-size: 21px;
+    line-height: 31px;
+}
+
+body {
+    overflow: hidden;
+    background-color: $color-background;
+    font-family: 'Raleway', sans-serif;
+}
+
+#app {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 100vh;
+    color: $color-text;
+}
+
+button {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    text-align: left;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: $color-h1;
+    font-weight: 900;
+}
+h2, h3 {
+    color: $color-h2;
+    font-weight: 700;
+}
+a {
+    color: $color-link;
+}
+
+// dark mode colors
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $color-background-dark;
+    }
+    #app {
+        color: #f22;
+        color: $color-text-dark;
+    }
+    h1 {
+        color: $color-h1-dark;
+        font-weight: 900;
+    }
+    h2, h3 {
+        color: $color-h2-dark;
+        font-weight: 700;
+    }
+    a {
+        color: $color-link-dark;
+    }
+}

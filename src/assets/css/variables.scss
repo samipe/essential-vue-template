@@ -1,0 +1,70 @@
+// colors
+$color-background: #eee;
+$color-text: #121212;
+$color-h1: #9575CD;
+$color-h2: #9575CD;
+$color-link: #9575CD;
+
+// colors (dark mode)
+$color-background-dark: #292929;
+$color-text-dark: #f0ece2;
+$color-h1-dark: #73BFB8;
+$color-h2-dark: #B9E3C6;
+$color-link-dark: #B9E3C6;
+
+// breakpoints
+$bp-sm:    576px !default;
+$bp-md:    768px !default;
+$bp-lg:    1024px !default;
+
+// grid max width
+$layout-container-max-width:    1140px !default;
+
+// Desktop base unit is in pixels
+$size-base-lg: 16px;
+
+// But in mobile, base unit is in viewport width i.e. font and spacing is fluid and scales with viewport size
+$size-base-md: 2vw;
+$size-base-sm: 3.2vw;
+$size-base-xs: 4vw;
+
+// font sizes
+$type-smallest: 0.75rem;
+$type-small: 0.875rem;
+$type-body: 1rem;
+$type-medium: 1.125rem;
+$type-large: 1.375rem;
+$type-larger: 1.625rem;
+$type-largest: 2rem;
+
+// font weights
+$weight-light: 300;
+$weight-normal: 400;
+$weight-demi-bold: 600;
+$weight-bold: 700;
+$weight-black: 900;
+
+// line heights
+$line-height--h1: 1.5;
+$line-height--h2: 1.38;
+$line-height--h3: 1.27;
+$line-height--h4: 1.77;
+$line-height--h5: 1.5;
+$line-height--body: 1.5;
+$line-height--label: 1.71;
+$line-height--meta: 1.42;
+
+$letter-spacing-body: 0;
+
+// these are size multipliers used for whitespace (margins, paddings)
+$size-3xsmall: 0.25rem;   // 4  px
+$size-2xsmall: 0.5rem;    // 8  px
+$size-xsmall: 0.75rem;    // 12 px
+$size-small: 1rem;        // 16 px
+$size-smedium: 1.2rem;
+$size-medium: 1.5rem;     // 24 px
+$size-large: 2rem;        // 32 px
+$size-xlarge: 4rem;       // 64 px
+$size-2xlarge: 6rem;      // 96 px
+$size-3xlarge: 8rem;      // 128px px
+
