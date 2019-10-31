@@ -239,14 +239,12 @@ $grid-gutter: 0.5rem;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  text-align: start;
 }
 
 .center-xs {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
 }
 
 .align-self-center {
@@ -257,7 +255,6 @@ $grid-gutter: 0.5rem;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  text-align: end;
 }
 
 .top-xs {
@@ -467,21 +464,18 @@ $grid-gutter: 0.5rem;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    text-align: start;
   }
 
   .center-sm {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    text-align: center;
   }
 
   .end-sm {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    text-align: end;
   }
 
   .top-sm {
@@ -692,21 +686,18 @@ $grid-gutter: 0.5rem;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    text-align: start;
   }
 
   .center-md {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    text-align: center;
   }
 
   .end-md {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    text-align: end;
   }
 
   .top-md {
@@ -917,21 +908,18 @@ $grid-gutter: 0.5rem;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    text-align: start;
   }
 
   .center-lg {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    text-align: center;
   }
 
   .end-lg {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    text-align: end;
   }
 
   .top-lg {

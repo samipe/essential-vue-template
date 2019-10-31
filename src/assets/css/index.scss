@@ -4,6 +4,7 @@
 @import 'margins';
 @import 'paddings';
 @import 'text';
+@import 'misc';
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:700,900&display=swap');
 
 html, body {
@@ -24,7 +25,7 @@ body {
     flex: 1 1 auto;
     flex-direction: column;
     min-height: 100vh;
-    color: $color-text;
+    color: $color-black;
 }
 
 button {
@@ -44,22 +45,6 @@ button {
     box-sizing: border-box;
 }
 
-
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-}
-h1 {
-    color: $color-h1;
-    font-weight: 900;
-}
-h2, h3 {
-    color: $color-h2;
-    font-weight: 700;
-}
-a {
-    color: $color-link;
-}
-
 // dark mode colors
 @media (prefers-color-scheme: dark) {
     body {
@@ -67,17 +52,17 @@ a {
     }
     #app {
         color: #f22;
-        color: $color-text-dark;
+        color: $color-black-dark;
     }
     h1 {
-        color: $color-h1-dark;
+        color: $color-primary-dark;
         font-weight: 900;
     }
     h2, h3 {
-        color: $color-h2-dark;
+        color: $color-secondary-dark;
         font-weight: 700;
     }
     a {
-        color: $color-link-dark;
+        color: $color-secondary-dark;
     }
 }

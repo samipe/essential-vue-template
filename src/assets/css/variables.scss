@@ -1,16 +1,18 @@
 // colors
-$color-background: #eee;
-$color-text: #121212;
-$color-h1: #9575CD;
-$color-h2: #9575CD;
-$color-link: #9575CD;
+$color-background: #f5f5f5;
+$color-black: #121212;
+$color-white: #fff;
+$color-primary: #9575CD;
+$color-secondary: #9575CD;
+$color-alert: #FD4579;
 
 // colors (dark mode)
 $color-background-dark: #292929;
-$color-text-dark: #f0ece2;
-$color-h1-dark: #73BFB8;
-$color-h2-dark: #B9E3C6;
-$color-link-dark: #B9E3C6;
+$color-black-dark: #fff;
+$color-white-dark: #121212;
+$color-primary-dark: #478b85;
+$color-secondary-dark: #B9E3C6;
+$color-alert-dark: #9b1f42;
 
 // breakpoints
 $bp-sm:    576px !default;

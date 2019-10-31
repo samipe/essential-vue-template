@@ -1,3 +1,18 @@
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: $color-primary;
+    font-weight: 900;
+}
+h2, h3 {
+    color: $color-secondary;
+    font-weight: 700;
+}
+a {
+    color: $color-secondary;
+}
+
 .text--align-center {
     text-align: center !important;
 }

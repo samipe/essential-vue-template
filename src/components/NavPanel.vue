@@ -2,10 +2,10 @@
 	<div class="nav-panel row end-xs padding--right-medium">
 		<router-link
 			v-for="item in items"
-			:key="item"
-			:to="`/${item.toLowerCase()}`"
+			:key="item.name"
+			:to="item.route"
 			class="padding--small">
-			{{ item }}
+			{{ item.name }}
 		</router-link>
 	</div>
 </template>
