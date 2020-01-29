@@ -1,6 +1,8 @@
 // vue.config.js
 
 module.exports = {
+	publicPath: '/public/',
+	outputDir: 'public',
 	indexPath: '../index.html',
 	chainWebpack: (config) => {
 		config.module
