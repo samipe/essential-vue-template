@@ -1,5 +1,7 @@
 // vue.config.js
+
 module.exports = {
+	indexPath: '../index.html',
 	chainWebpack: (config) => {
 		config.module
 			.rule('sass')
