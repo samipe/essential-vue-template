@@ -96,6 +96,11 @@
   strong {
     font-weight: bolder;
   }
+
+  h1, h2, h3, p {
+    margin: 0;
+    line-height: 1;
+  }
   
   /**
    * 1. Correct the inheritance and scaling of font size in all browsers.

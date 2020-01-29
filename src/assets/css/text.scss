@@ -1,89 +1,101 @@
-h1, h2, h3 {
-    font-family: 'Roboto', sans-serif;
-}
 h1 {
+    font-size: $type-largest;
     color: $color-primary;
-    font-weight: 900;
-}
-h2, h3 {
-    color: $color-secondary;
-    font-weight: 700;
-}
-a {
-    color: $color-secondary;
+    font-weight: $weight-black;
+    line-height: $line-height-h1;
 }
 
-.text--align-center {
+h2 {
+    font-size: $type-large;
+    color: $color-secondary;
+    font-weight: $weight-bold;
+    line-height: $line-height-h2;
+}
+
+h3 {
+    font-size: $type-body;
+    color: $color-secondary;
+    font-weight: $weight-semi-bold;
+    line-height: $line-height-h3;
+}
+
+p {
+    color: $color-grey-dark;
+    font-size: $type-body;
+}
+
+a {
+    color: $color-secondary;
+    font-weight: $weight-semi-bold;
+
+    &:hover {
+        color: $color-secondary-dark;
+    }
+}
+
+.text-align-center {
     text-align: center !important;
 }
 
-.text--align-left {
+.text-align-left {
     text-align: left !important;
 }
 
-.text--align-right {
+.text-align-right {
     text-align: right !important;
 }
 
 
 // text transform
-.type--uppercase {
+.type-uppercase {
     text-transform: uppercase;
 }
 
-.type--capitalize {
+.type-capitalize {
     text-transform: capitalize;
 }
 
 // Font Weights
-.type--black {
+.type-black {
     font-weight: $weight-black;
 }
 
 b,
 strong,
-.type--bold {
+.type-bold {
     font-weight: $weight-bold;
 }
 
-.type--demi-bold {
-    font-weight: $weight-demi-bold;
+.type-semi-bold {
+    font-weight: $weight-semi-bold;
 }
 
-.type--normal {
+.type-normal {
     font-weight: $weight-normal;
 }
 
-.type--light {
+.type-light {
     font-weight: $weight-light;
 }
 
 // Font Sizes
-.type--largest {
+.type-largest {
     font-size: $type-largest;
 }
 
-.type--larger {
-    font-size: $type-larger;
-}
-
-.type--large {
+.type-large {
     font-size: $type-large;
 }
 
-.type--medium {
-    font-size: $type-medium;
-}
-
-.type--body {
+.type-body {
     font-size: $type-body;
 }
 
 small,
-.type--small {
+.type-small {
     font-size: $type-small;
 }
 
-.type--smallest {
+.type-smallest {
     font-size: $type-smallest;
 }

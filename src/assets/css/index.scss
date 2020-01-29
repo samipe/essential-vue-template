@@ -4,20 +4,19 @@
 @import 'margins';
 @import 'paddings';
 @import 'text';
-@import 'misc';
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto:700,900&display=swap');
+@import 'elements';
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,900&display=swap');
 
 html, body {
     width: 100vw;
     overflow-x: hidden !important;
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 18px;
+    line-height: $line-height-body;
+    background-color: $color-grey-light;
 }
 
-body {
-    overflow: hidden;
-    background-color: $color-background;
-    font-family: 'Raleway', sans-serif;
+* {
+    font-family: 'Raleway', sans-serif !important;
 }
 
 #app {
@@ -43,26 +42,4 @@ button {
 
 * {
     box-sizing: border-box;
-}
-
-// dark mode colors
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: $color-background-dark;
-    }
-    #app {
-        color: #f22;
-        color: $color-black-dark;
-    }
-    h1 {
-        color: $color-primary-dark;
-        font-weight: 900;
-    }
-    h2, h3 {
-        color: $color-secondary-dark;
-        font-weight: 700;
-    }
-    a {
-        color: $color-secondary-dark;
-    }
 }

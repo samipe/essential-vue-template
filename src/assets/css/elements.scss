@@ -1,0 +1,64 @@
+// elevations (shadows behind elements)
+
+.elevation-small {
+    -webkit-box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
+    box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
+}
+
+.elevation-medium {
+    -webkit-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+}
+
+.elevation-large {
+    -webkit-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.4);
+    box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.4);
+}
+
+.hover-elevation-25 {
+    &:hover {
+        -webkit-box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
+        -moz-box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
+        box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
+    }
+}
+
+.hover-elevation-50 {
+    &:hover {
+        -webkit-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+        -moz-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+        box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    }
+}
+
+.elevation-50 {
+    -webkit-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+}
+
+.elevation-75 {
+    -webkit-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+}
+
+.elevation-100 {
+    -webkit-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    -moz-box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+    box-shadow: 0px 7px 12px -1px rgba(0,0,0,0.34);
+}
+
+// borders - useful for adding a line below a row for example
+
+.border-bottom-light {
+    border-bottom: solid 2px $color-white;
+}
+
+.border-bottom-dark {
+    border-bottom: solid 2px $color-grey-dark;
+}
+

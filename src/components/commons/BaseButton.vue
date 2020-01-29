@@ -1,6 +1,13 @@
 <template>
-	<button :class="`${styling} ${size}`" @click.prevent="$emit('click')">
-		<slot />
+	<button
+		type="button"
+		class="hover-elevation-25"
+		:class="[
+			styling,
+			size
+		]"
+		@click.prevent="$emit('click')">
+		{{ label }}
 	</button>
 </template>
 
@@ -15,6 +22,10 @@ export default {
 		size: {
 			type: String,
 			default: 'small'
+		},
+		label: {
+			type: String,
+			default: ''
 		}
 	}
 }
@@ -26,27 +37,29 @@ export default {
 		width: 100%;
 		text-align: center;
 		display: block;
-		color: red;
 		font-size: $type-small;
-		border-radius: 10px;
+		text-transform: uppercase;
+		font-weight: $weight-semi-bold;
+		border-radius: $border-radius-rounded;
 		transition: box-shadow 0.1s, background-color 0.2s;
 
 		&:hover {
-			-webkit-box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
-			-moz-box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
-			box-shadow: 1px 4px 4px -1px rgba(0,0,0,0.3);
+			font-weight: $weight-bold;
 		}
 
 		&.primary {
 			background-color: $color-primary;
 			color: $color-white;
 			&:hover {
-				background-color: darken($color-primary, 5%);
+				background-color: $color-primary-dark;
+			}
+			&:focus {
+				background-color: $color-primary;
 			}
 		}
 		&.ghost {
 			border: solid 2px $color-primary;
-			background-color: darken($color-white, 2%);
+			background-color: $color-white-opacity;
 			color: $color-primary;
 			&:hover {
 				background-color: $color-white;
@@ -62,54 +75,14 @@ export default {
 			}
 		}
 
-		@media (prefers-color-scheme: dark) {
-			&.primary {
-				background-color: $color-primary-dark;
-				color: $color-white;
-				&:hover {
-					background-color: darken($color-primary-dark, 10%);
-				}
-			}
-			&.ghost {
-				border: solid 2px $color-primary-dark;
-				background-color: $color-background-dark;
-				color: $color-primary-dark;
-				&:hover {
-					background-color: lighten($color-background-dark, 10%);
-				}
-			}
-			&.alert {
-				background-color: $color-background-dark;
-				color: $color-alert-dark;
-				border: solid 2px $color-alert-dark;
-				&:hover {
-					color: $color-white;
-					background-color: $color-alert-dark;
-				}
-			}
-
-			&:hover {
-				-webkit-box-shadow: 1px 4px 4px -1px rgba($color-primary-dark ,0.3);
-				-moz-box-shadow: 1px 4px 4px -1px rgba($color-primary-dark ,0.3);
-				box-shadow: 1px 4px 4px -1px rgba($color-primary-dark,0.3);
-				&.alert {
-					&:hover {
-						-webkit-box-shadow: 1px 4px 4px -1px rgba($color-alert-dark ,0.3);
-						-moz-box-shadow: 1px 4px 4px -1px rgba($color-alert-dark ,0.3);
-						box-shadow: 1px 4px 4px -1px rgba($color-alert-dark,0.3);
-					}
-				}
-			}
-		}
-
 		&.small {
-			padding: $size-xsmall;
+			padding: $size-2xsmall;
 		}
 		&.medium {
-			padding: $size-small;
+			padding: $size-xsmall;
 		}
 		&.large {
-			padding: $size-medium;
+			padding: $size-small;
 		}
 	}
 </style>
