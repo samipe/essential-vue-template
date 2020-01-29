@@ -1,118 +1,150 @@
 <template>
 	<div class="container">
-		<div class="row padding-bottom-small margin-bottom-large">
-			<div class="col-xs-12 col-md-4 margin-bottom-small text-align-right">
+		<div class="row padding-bottom-small margin-bottom-xlarge">
+			<div class="col-lg-3 text-align-right border-right-dark">
 				<h1>Style Guide</h1>
 			</div>
-			<div class="col-xs-12 col-md-8 border-bottom-dark padding-bottom-small">
-				This pages showcase most of the default components and styles.
-				Be sure to tune your colors, spacings, sizes etc. in the index.scss-file!
+			<div class="col-md-9 padding-left-xsmall">
+				<div class="card">
+					This pages showcase most of the default components and styles.
+					Be sure to tune your colors, spacings, sizes etc. in the index.scss-file!
+				</div>
 			</div>
 		</div>
-		<div class="row padding-bottom-large margin-bottom-large">
-			<div class="col-md-4 margin-bottom-small text-align-right">
-				<h2>Text</h2>
+		<div class="row margin-bottom-large">
+			<div class="col-lg-3 col-md-12 text-align-right border-right-dark">
+				<h2>Typography</h2>
 			</div>
-			<div class="col-xs-12 col-md-7">
-				<h3>Type scales</h3>
-				<div class="col-xs-6">
+			<div class="col-lg-3 padding-left-xsmall">
+				<div class="card">
+					<div class="margin-bottom-xsmall type-smallest" style="border: 1px solid #aaa;">
+						type-smallest
+					</div>
+					<div class="margin-bottom-xsmall type-small" style="border: 1px solid #aaa;">
+						type-small
+					</div>
+					<div class="margin-bottom-xsmall type-body" style="border: 1px solid #aaa;">
+						type-body
+					</div>
+					<div class="margin-bottom-xsmall type-large" style="border: 1px solid #aaa;">
+						type-large
+					</div>
+					<div class="margin-bottom-xsmall type-largest" style="border: 1px solid #aaa;">
+						type-largest
+					</div>
 				</div>
-				<div class="col-xs-6">
+			</div>
+			<div class="col-lg-3 padding-left-xsmal">
+				<div class="card">
+					<div class="margin-bottom-xsmall type-light" style="border: 1px solid #aaa;">
+						type-light
+					</div>
+					<div class="margin-bottom-xsmall type-normal" style="border: 1px solid #aaa;">
+						type-normal
+					</div>
+					<div class="margin-bottom-xsmall type-semi-bold" style="border: 1px solid #aaa;">
+						type-semi-bold
+					</div>
+					<div class="margin-bottom-xsmall type-bold" style="border: 1px solid #aaa;">
+						type-bold
+					</div>
+					<div class="margin-bottom-xsmall type-black" style="border: 1px solid #aaa;">
+						type-black
+					</div>
 				</div>
-				<h1>Header 1</h1>
-				<h2>Header 2</h2>
-				<h3>Header 3</h3>
+			</div>
+			<div class="col-lg-3 padding-left-xsmal">
+				<div class="card">
+					<div class="margin-bottom-xsmall text-align-left" style="border: 1px solid #aaa;">
+						text-align-left
+					</div>
+					<div class="margin-bottom-xsmall text-align-center" style="border: 1px solid #aaa;">
+						text-align-center
+					</div>
+					<div class="margin-bottom-xsmall text-align-right" style="border: 1px solid #aaa;">
+						text-align-right
+					</div>
+					<div class="margin-bottom-xsmall type-uppercase" style="border: 1px solid #aaa;">
+						type-uppercase
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row padding-bottom-large margin-bottom-large">
-			<div class="col-md-4 margin-bottom-small text-align-right">
+		<div class="row margin-bottom-large">
+			<div class="col-lg-3 text-align-right border-right-dark">
 				<h2>Headers</h2>
 			</div>
-			<div class="col-xs-12 col-md-7">
-				<h1>Header 1</h1>
-				<h2>Header 2</h2>
-				<h3>Header 3</h3>
+			<div class="col-lg-3 padding-left-xsmall">
+				<div class="card">
+					<h1 class="margin-bottom-xsmall" style="border: 1px solid #aaa;">Header 1</h1>
+					<h2 class="margin-bottom-xsmall" style="border: 1px solid #aaa;">Header 2</h2>
+					<h3 style="border: 1px solid #aaa;">Header 3</h3>
+				</div>
 			</div>
 		</div>
-		<div class="row padding-bottom-2xlarge">
-			<div class="col-xs-12 border-bottom">
-				<h1>Header 1</h1>
-				<h2>Header 2</h2>
-				<h3>Header 3</h3>
+		<div class="row margin-bottom-large">
+			<div class="col-lg-3 text-align-right border-right-dark">
+				<h2>Buttons</h2>
 			</div>
-			<div class="col-xs-2 type-smallest">
-				text smallest
+			<div class="col-lg-3 padding-left-xsmall">
+				<base-button
+					:styling="'primary'"
+					:size="'large'"
+					:label="'primary L'"
+					@click="exampleMethod()">
+					primary large
+				</base-button>
 			</div>
-			<div class="col-xs-2">
-				text regular
+			<div class="col-lg-3 padding-left-xsmall">
+				<base-button
+					:styling="'ghost'"
+					:size="'medium'"
+					:label="'ghost M'">
+					ghost medium
+				</base-button>
 			</div>
-			<div class="col-xs-2 type-bold">
-				text bold
+			<div class="col-lg-3 padding-left-xsmall">
+				<base-button
+					:styling="'alert'"
+					:size="'small'"
+					:label="'alert S'">
+					alert small
+				</base-button>
 			</div>
-			<div class="col-xs-2 type-large">
-				text large
+		</div>
+		<div class="row">
+			<div class="col-lg-3 text-align-right border-right-dark" style="border: 1px solid #aaa;">
+				<h2>Grid</h2>
+				<h3>col-lg-3</h3>
 			</div>
-			<div class="col-xs-2 type-large">
-				<a href="/">link text</a>
+			<div class="col-lg-9 padding-small" style="border: 1px solid #aaa;">
+				<h3>col-lg-9</h3>
 			</div>
-			<div class="col-xs-12 margin-top-large">
-				<div class="row">
-					<div class="col-xs-2">
-						<base-button
-							:styling="'primary'"
-							:size="'small'"
-							:label="'primary S'"
-							@click="exampleMethod()">
-							primary S
-						</base-button>
-					</div>
-					<div class="col-xs-2">
-						<base-button
-							:styling="'ghost'"
-							:size="'medium'"
-							:label="'ghost M'">
-							ghost M
-						</base-button>
-					</div>
-					<div class="col-xs-3">
-						<base-button
-							:styling="'alert'"
-							:size="'large'"
-							:label="'alert L'">
-							alert L
-						</base-button>
-					</div>
-				</div>
+		</div>
+		<div class="row type-small text-align-center">
+			<div
+				class="col-lg-2 col-md-2 col-sm-2 col-xs-12 padding-xsmall"
+				style="border: 1px solid #aaa;">
+				<div>col-lg-2</div>
+				<div>col-md-2</div>
+				<div>col-sm-2</div>
+				<div>col-xs-12</div>
 			</div>
-			<div class="col-xs-12 margin-top-large">
-				<div class="row">
-					<div class="col-xs-3 col-xs-offset-2 elevation-25 padding-small">
-						col-xs-3 col-xs-offset-2 elevation-25 padding-small
-					</div>
-				</div>
-				<div class="row end-xs">
-					<div class="col-xs-3 elevation-50 padding-large">
-						col-xs-3 elevation-50 padding-large
-					</div>
-				</div>
-				<div class="row margin-top-medium">
-					<div
-						class="col-xs-12 elevation-25 text-align-center padding-large margin-bottom-large">
-						col-xs-12 elevation-25 text-align-center padding-large
-					</div>
-					<div class="col-xs-12 col-md-6 col-lg-3 elevation-25 padding-small">
-						col-xs-12 elevation-25 text-align-center padding-large
-					</div>
-					<div class="col-xs-12 col-md-6 col-lg-3 elevation-25 padding-small">
-						col-xs-12 elevation-25 text-align-center padding-large
-					</div>
-					<div class="col-xs-12 col-md-6 col-lg-3 elevation-25 padding-small">
-						col-xs-12 elevation-25 text-align-center padding-large
-					</div>
-					<div class="col-xs-12 col-md-6 col-lg-3 elevation-25 padding-small">
-						col-xs-12 elevation-25 text-align-center padding-large
-					</div>
-				</div>
+			<div
+				class="col-lg-2 col-md-4 col-sm-10 col-xs-12 padding-xsmall"
+				style="border: 1px solid #aaa;">
+				<div>col-lg-2</div>
+				<div>col-md-4</div>
+				<div>col-sm-10</div>
+				<div>col-xs-12</div>
+			</div>
+			<div
+				class="col-lg-2 col-md-6 col-sm-12 col-xs-12 padding-xsmall"
+				style="border: 1px solid #aaa;">
+				<div>col-lg-2</div>
+				<div>col-md-6</div>
+				<div>col-sm-12</div>
+				<div>col-xs-12</div>
 			</div>
 		</div>
   </div>
